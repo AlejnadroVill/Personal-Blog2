@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- CSS link -->
+    <link rel="stylesheet" href="./assets/css/styles.css" />
+    <title>My Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>Alejandro Villavicencio's Blog</h1>
+      <button class="theme-toggle">🌞🌙</button>
+      <button class="post-button" onclick="location.href='blog.html'">
+        View Posts
+      </button>
+    </header>
+
+    <main>
+      <aside>
+        <img src="./assets/images/spike.png" alt="Miguel's Avatar" />
+      </aside>
+
+      <section>
+        <h2>Share Your Thoughts!</h2>
+        <form>
+          <label for="usernameInput">Username:</label>
+          <input name="username" id="usernameInput" type="text" />
+
+          <label for="titleInput">Post Title:</label>
+          <input name="title" id="titleInput" type="text" />
+
+          <label for="contentInput">Post Content:</label>
+          <textarea name="content" id="contentInput" rows="4"></textarea>
+
+          <input type="submit" value="Submit Post" />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      <p>
+        <a href="https://github.com/AlejnadroVill/Personal-Blog" target="_blank"
+          >© Alejandro Villavicencio</a
+        >
+      </p>
+    </footer>
+
+    <!-- JavaScript links -->
+    <script src="./assets/js/theme-toggle.js"></script>
+    <script src="./assets/js/form-handler.js"></script>
+  </body>
+</html>

@@ -1,0 +1,135 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #f0f8ff; /* Light background color */
+}
+
+/* Header */
+header {
+  background-color: #3490db;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  border-bottom: 10px double rebeccapurple;
+}
+
+/* Button direct you to the posts */
+.post-button {
+  background-color: #3490db;
+  color: white;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: auto;
+}
+
+/* Theme button */
+.theme-toggle {
+  background-color: #3490db;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-right: 20px;
+}
+
+/* Main content */
+main {
+  display: flex;
+  height: calc(100vh - 60px); /* Adjust for header height */
+  padding: 20px;
+}
+
+/* Left Box */
+aside {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  border-right: 10px double rebeccapurple;
+}
+
+/* Image */
+aside img {
+  border-radius: 25%;
+  max-width: 100%;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+/* Form section */
+section {
+  flex: 2;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+/* Form Styles */
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label,
+form input,
+form textarea,
+form input[type="submit"] {
+  margin: 10px 0;
+  font-weight: bold;
+}
+
+input[type="submit"] {
+  background-color: #3490db;
+  color: white;
+  cursor: pointer;
+  padding: 10px;
+  width: 100%;
+  margin-top: 10px;
+}
+
+/* Footer */
+footer {
+  background-color: #3490db;
+  color: white;
+  position: fixed;
+  padding: 10px 20px;
+  text-align: center;
+  width: 100%;
+  bottom: 0;
+  border-top: 10px double rebeccapurple;
+  opacity: 1;
+}
+
+/* Dark mode */
+.dark-mode {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode header {
+  background-color: #222;
+  color: #fff;
+}
+
+.dark-mode .blog-card {
+  background-color: #333;
+  color: #fff;
+}
+
+/* Mobile friendly */
+@media (max-width: 768px) {
+  main {
+    flex-direction: column;
+  }
+
+  aside,
+  section {
+    width: 100%;
+  }
+}
